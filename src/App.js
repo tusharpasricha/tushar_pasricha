@@ -1,7 +1,7 @@
 import { Route} from 'react-router-dom';
 import Main from './components/main/main';
 import Post from './components/post';
-import Suggestions from './components/suggestion';
+// import Suggestions from './components/suggestion';
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
       <Route path="/post">
       <Post/>
       </Route>
-      <Route path="/suggestions">
+      {/* <Route path="/suggestions">
       <Suggestions/>
-      </Route>
+      </Route> */}
     </div>
   );
 }

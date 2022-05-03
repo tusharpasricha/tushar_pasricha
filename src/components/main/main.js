@@ -52,7 +52,6 @@ function Main()
 
            <a href="https://twitter.com/tusharpasricha_" target="_blank"> Twitter</a>
 
-           <NavLink activeClassName={classes.active}  to="/suggestions" onClick={moreData}> Suggestions</NavLink>
 
         </div>
         <div className={classes.bar}>
