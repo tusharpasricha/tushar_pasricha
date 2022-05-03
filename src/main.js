@@ -51,14 +51,15 @@ function Main()
            <a href="https://www.linkedin.com/in/tusharpasricha" target="_blank"> LinkedIn</a>
 
            <a href="https://twitter.com/tusharpasricha_" target="_blank"> Twitter</a>
-        </div>
 
+
+        </div>
         <div className={classes.bar}>
-            <ul>
-                <li><NavLink activeClassName={classes.active}  to="/"> Home</NavLink></li>
-                <li><NavLink activeClassName={classes.active}  to="/post" onClick={moreData}> {nav2}</NavLink></li>
-            </ul>
-            {modelisopen && <Backdrop onCancel={lessdata}/>}
+        <ul>
+            <li><NavLink activeClassName={classes.active}  to="/"> Home</NavLink></li>
+            <li><NavLink activeClassName={classes.active}  to="/post" onClick={moreData}> {nav2}</NavLink></li>
+        </ul>
+        {modelisopen && <Backdrop onCancel={lessdata}/>}
         </div>
     </div>
     </>)
