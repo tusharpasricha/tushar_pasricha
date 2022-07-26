@@ -1,0 +1,28 @@
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #41231e;
+    background-color: #616161;
+    color: rgba(255, 255, 255, 0.637);
+    height: 39px;
+    font-size: 0.8rem;
+    position: "fixed";
+    left: "0";
+    bottom: "0";
+    height: "60px";
+    width: "100%";
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    border: sol;
+    box-shadow: rgba(0, 0, 0, 0.696) 0px 22px 70px 4px;
+
+}
+@media only screen and (min-width: 1400px) {
+
+    .footer
+    {
+    width: 1200px;
+    }
+}

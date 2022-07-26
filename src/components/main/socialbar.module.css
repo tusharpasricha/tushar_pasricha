@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.socialhandles
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #703f37;
+    background-color: #292929;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.0rem;
+    height: 7rem;
+  
+}
+.socialhandles :hover{
+    font-size: 2.0rem;
+    font-weight:bold;  
+}
+.sociala{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .socialhandles
+    {
+    width: 1200px;
+    }
+}

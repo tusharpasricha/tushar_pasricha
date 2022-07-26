@@ -1,0 +1,31 @@
+.skills{
+    color: rgb(185, 185, 185);
+    background-color: #292929;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.allskils{
+    display: flex;
+    justify-content: space-around;
+}
+.eachskill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    padding-left: 10px;
+    font-weight: bold;
+}
+.skillsfa{
+    font-size: 60px;
+}
+@media only screen and (min-width: 1400px) {
+
+    .skills
+    {
+    width: 1200px;
+    }
+}
