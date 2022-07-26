@@ -48,7 +48,7 @@ const Project = () => {
     <div className={classes.back}>
       <Link className={classes.projecta}  to="/">
       <FaArrowLeft className={classes.faback}/>     
-      back  
+      Back  
        </Link>
     </div>
 
@@ -69,7 +69,7 @@ const Project = () => {
         <p>{scrolldata[0].desc}</p>
 
         <div className={classes.options}>
-        <a className={classes.opt} href={scrolldata[0].link}> Demo </a>
+        <a target="_blank" className={classes.opt} href={scrolldata[0].link}> Demo </a>
         <a className={classes.opt} href={scrolldata[0].link}> Code</a>
         </div>
         

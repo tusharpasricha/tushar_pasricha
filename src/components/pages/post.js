@@ -137,7 +137,7 @@ const Post = () => {
             </div>
             <div className={classes.text}>
                 <div>
-                <text className={classes.textblue}>const</text> <text className={classes.textpurple}>[</text> brain,<text className={classes.textyellow}>setbrain</text> <text className={classes.textpurple}>]</text>= <text className={classes.textblue}>React</text>.useState <text className={classes.textpurple}>(</text> <text className={classes.textorange}>'Think twice Code once'</text><text className={classes.textpurple}>)</text>
+                <text className={classes.textorange}>The only failure in 20s is inactivity. The rest is trail and error.</text> 
                 </div>
                
             </div>
