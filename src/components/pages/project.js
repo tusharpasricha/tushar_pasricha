@@ -7,6 +7,7 @@ import ss from "./first.png";
 import owlsome from "./owlsome.png"
 import elliptical from "./elliptical.png"
 import tabx from "./tabx.png"
+import everypenny from './everypenny.jpeg'
 const scrolldata = [
   {
     heading: "Sir Johnson Socks",
@@ -22,7 +23,9 @@ const scrolldata = [
   },
   {
     heading: "Every Penny Cost",
-    img: "",
+    img: everypenny,
+    link:"https://everypennycounts.vercel.app/",
+    glink:"https://github.com/tusharpasricha/everypennycounts",
     desc: "React App for tracking expenses",
   },
   {
@@ -112,7 +115,7 @@ const Project = () => {
 
         <div className={classes.scrollelement}>
           <div className={classes.img}>
-            <img src={ss} alt="" />
+            <img src={scrolldata[2].img} alt="" />
           </div>
           <div className={classes.part2}>
             <div className={classes.data}>
@@ -120,11 +123,11 @@ const Project = () => {
               <p>{scrolldata[2].desc}</p>
             </div>
             <div className={classes.options}>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a target="_blank"className={classes.opt} href={scrolldata[2].link}>
                 {" "}
                 Demo{" "}
               </a>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a target="_blank" className={classes.opt} href={scrolldata[2].glink}>
                 {" "}
                 Code
               </a>
@@ -142,11 +145,11 @@ const Project = () => {
               <p>{scrolldata[3].desc}</p>
             </div>
             <div className={classes.options}>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a target="_blank"className={classes.opt} href={scrolldata[0].link}>
                 {" "}
                 Demo{" "}
               </a>
-              <a className={classes.opt} href={scrolldata[3].glink}>
+              <a target="_blank"className={classes.opt} href={scrolldata[3].glink}>
                 {" "}
                 Code
               </a>
@@ -164,11 +167,11 @@ const Project = () => {
               <p>{scrolldata[4].desc}</p>
             </div>
             <div className={classes.options}>
-              <a className={classes.opt} href={scrolldata[4].link}>
+              <a target="_blank"className={classes.opt} href={scrolldata[4].link}>
                 {" "}
                 Demo{" "}
               </a>
-              <a className={classes.opt} href={scrolldata[4].glink}>
+              <a target="_blank"className={classes.opt} href={scrolldata[4].glink}>
                 {" "}
                 Code
               </a>
@@ -187,11 +190,11 @@ const Project = () => {
               <p>{scrolldata[5].desc}</p>
             </div>
             <div className={classes.options}>
-              <a className={classes.opt} href={scrolldata[5].link}>
+              <a target="_blank"className={classes.opt} href={scrolldata[5].link}>
                 {" "}
                 Demo{" "}
               </a>
-              <a className={classes.opt} href={scrolldata[5].link}>
+              <a target="_blank"className={classes.opt} href={scrolldata[5].link}>
                 {" "}
                 Code
               </a>
