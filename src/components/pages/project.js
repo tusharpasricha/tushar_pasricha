@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import ss from "./first.png";
 import owlsome from "./owlsome.png"
+import elliptical from "./elliptical.png"
+import tabx from "./tabx.png"
 const scrolldata = [
   {
     heading: "Sir Johnson Socks",
@@ -27,18 +29,22 @@ const scrolldata = [
     heading: "Owlsome Coffee",
     img: owlsome,
     link:"",
-    img:"https://github.com/tusharpasricha/owlsomecoffee",
+    glink:"https://github.com/tusharpasricha/owlsomecoffee",
     desc: "Website for a coffee brand",
   },
 
   {
     heading: "Elliptical",
-    img: "",
+    img: elliptical,
+    link:"https://elliptical.herokuapp.com/html/home.html",
+    glink:"https://github.com/sarthakkathpalia/elliptical",
     desc: "A group project for my first hackathon",
   },
   {
     heading: "TabX",
-    img: "",
+    img: tabx,
+    link:"https://github.com/tusharpasricha/tabX",
+    glink:"https://github.com/tusharpasricha/tabX",
     desc: "A chrome extention that makes sharing URL easier",
   },
 ];
@@ -82,7 +88,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className={classes.scrollelement}>
+        {/* <div className={classes.scrollelement}>
           <div className={classes.img}>
             <img src={ss} alt="" />
           </div>
@@ -102,7 +108,7 @@ const Project = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={classes.scrollelement}>
           <div className={classes.img}>
@@ -127,7 +133,7 @@ const Project = () => {
         </div>
         <div className={classes.scrollelement}>
           <div className={classes.img}>
-            <img src={owlsome} alt="" />
+            <img src={scrolldata[3].img} alt="" />
           </div>
 
           <div className={classes.part2}>
@@ -140,7 +146,7 @@ const Project = () => {
                 {" "}
                 Demo{" "}
               </a>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a className={classes.opt} href={scrolldata[3].glink}>
                 {" "}
                 Code
               </a>
@@ -150,7 +156,7 @@ const Project = () => {
 
         <div className={classes.scrollelement}>
           <div className={classes.img}>
-            <img src={ss} alt="" />
+            <img src={scrolldata[4].img} alt="" />
           </div>
           <div className={classes.part2}>
             <div className={classes.data}>
@@ -158,11 +164,11 @@ const Project = () => {
               <p>{scrolldata[4].desc}</p>
             </div>
             <div className={classes.options}>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a className={classes.opt} href={scrolldata[4].link}>
                 {" "}
                 Demo{" "}
               </a>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a className={classes.opt} href={scrolldata[4].glink}>
                 {" "}
                 Code
               </a>
@@ -172,7 +178,7 @@ const Project = () => {
 
         <div className={classes.scrollelement}>
           <div className={classes.img}>
-            <img src={ss} alt="" />
+            <img src={scrolldata[5].img} alt="" />
           </div>
 
           <div className={classes.part2}>
@@ -181,11 +187,11 @@ const Project = () => {
               <p>{scrolldata[5].desc}</p>
             </div>
             <div className={classes.options}>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a className={classes.opt} href={scrolldata[5].link}>
                 {" "}
                 Demo{" "}
               </a>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a className={classes.opt} href={scrolldata[5].link}>
                 {" "}
                 Code
               </a>
