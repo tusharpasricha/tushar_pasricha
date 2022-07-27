@@ -1,13 +1,3 @@
-.post{
-    color: rgb(127, 127, 127);
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    background-color: #292929;
-   
-
-}
 .back{
     background-color: #292929;
     display: flex;
@@ -25,13 +15,15 @@
     color: rgb(130, 130, 130);
 }
 
-
-
-.outer{
-    /* background-color: #a76c6c; */
-    background-color: #292929;
-    height: 180px;
+.post{
+    color: rgb(127, 127, 127);
     display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #292929;
+   
+
 }
 .postsafari {
    width: 80%;
