@@ -7,6 +7,7 @@ import ss from "./first.png";
 import owlsome from "./owlsome.png"
 import elliptical from "./elliptical.png"
 import tabx from "./tabx.png"
+import dont from "./dont.png"
 import everypenny from './everypenny.jpeg'
 const scrolldata = [
   {
@@ -17,9 +18,11 @@ const scrolldata = [
     desc: "Website for a socks brand made using Reactjs and hosted on versel",
   },
   {
-    heading: "Noty",
-    img: "",
-    desc: "A notes App frdssgbfdgtrhtr",
+    heading: "Don't Stop",
+    img: dont,
+    link:"https://dontstop-xi.vercel.app/",
+    glink:"https://github.com/tusharpasricha/Don-tStop",
+    desc: "A travel journal app to write your everyday travel journal",
   },
   {
     heading: "Every Penny Cost",
@@ -91,9 +94,9 @@ const Project = () => {
           </div>
         </div>
 
-        {/* <div className={classes.scrollelement}>
+        <div className={classes.scrollelement}>
           <div className={classes.img}>
-            <img src={ss} alt="" />
+            <img src={scrolldata[1].img} alt="" />
           </div>
           <div className={classes.part2}>
             <div className={classes.data}>
@@ -101,17 +104,17 @@ const Project = () => {
               <p>{scrolldata[1].desc}</p>
             </div>
             <div className={classes.options}>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a className={classes.opt} href={scrolldata[1].link}>
                 {" "}
                 Demo{" "}
               </a>
-              <a className={classes.opt} href={scrolldata[0].link}>
+              <a className={classes.opt} href={scrolldata[1].link}>
                 {" "}
                 Code
               </a>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className={classes.scrollelement}>
           <div className={classes.img}>
