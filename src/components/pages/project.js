@@ -104,7 +104,7 @@ const Project = () => {
               <p>{scrolldata[1].desc}</p>
             </div>
             <div className={classes.options}>
-              <a className={classes.opt} href={scrolldata[1].link}>
+              <a target="_blank" className={classes.opt} href={scrolldata[1].link}>
                 {" "}
                 Demo{" "}
               </a>
