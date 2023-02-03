@@ -51,7 +51,7 @@ const scrolldata = [
     img: tabx,
     link:"https://github.com/tusharpasricha/tabX",
     glink:"https://github.com/tusharpasricha/tabX",
-    desc: "A chrome extention that makes sharing URL easier",
+    desc: "Extension to share URL of your current tab straight away with a click. Its a group project for my first Hackathon",
   },
 ];
 
