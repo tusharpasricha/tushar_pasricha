@@ -15,7 +15,7 @@ const About = () => {
   function showabout() {
     setmainintro("Hi");
     setabout(
-      "I am a pre final year Computer Science Undergrad at JIIT noida."
+      "I am a pre final year Computer Science Undergrad at Jaypee Institute of Information Technology Noida, India. I am a Blockchain enthusiast and am also into Web development "
     );
   }
   return (
