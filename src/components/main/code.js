@@ -1,8 +1,12 @@
 import React from 'react';
 import classes from './code.module.css'
+   
+
 
 const Code = () => {
   return (
+    <>
+    
     <div className={classes.outer}>
 
     <div className={classes.safari}>
@@ -26,6 +30,8 @@ const Code = () => {
 
 
     </div>
+  
+    </>
   )
 }
 
