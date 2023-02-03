@@ -37,14 +37,15 @@ const Post = () => {
                 
                  <br></br>
                  <br></br>
-My father runs a wholesale shop and I used to help him before my college and sometimes now also when I go home from my hostel. 
+                 My father runs a wholesale shop and I used to help him before entering college and sometimes now also when I go home from my hostel. 
 I am so proud of how he grew his business.
-I feel there are a lot of things that I learn there.
+There are a lot of things that I learn there.
+
 <br></br>
 <br></br>
 <h3>PARTNERSHIP</h3>
 
-Papa started his business in 2008 with his friend as business partner.
+Papa started his business in 2008 with his friend as a business partner.
 I call him Chachu.
 From sharing the workload to sharing the cost and the profit they managed it together. Disagreements can occur in partnership and It's important to handle them.
 It's been years and still they both are more than brothers and his family and our family share good relations.
@@ -52,7 +53,7 @@ It's been years and still they both are more than brothers and his family and ou
 <br></br>
 <h3>CUSTOMER RELATIONSHIPS & CUSTOMER LOYALTY</h3> 
 
-Customer relationships are built on trust and Trust does not happen all at once, gaining trust takes work.
+Customer relationships are built on trust and Trust only happens in stages, gaining trust takes work.
 There’s an uncle who comes twice every day with a bag on his cycle carrier and buys goods to sell in his shop.  He is unschooled and faces problems in calculations and in counting money. I remember sometimes he even gives all the money he has and says “aapke jitne bante h lelo”. 
 <br></br>
 <br></br>
