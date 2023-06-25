@@ -16,8 +16,52 @@ import charity from './charity.png'
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-
 const scrolldata = [
+  {
+    heading: "Freelancing website using Blockchain",
+    img: freelancing,
+    link: "https://github.com/tusharpasricha/Dapp-freelancing",
+    glink: "https://github.com/tusharpasricha/Dapp-freelancing",
+    desc: "Freelancing application used to create a contract between freelancer and employer increasing the trustability.",
+    categories: ["Solidity", "Metamask", "React"],
+  },
+  {
+    heading: "Rent Tracker",
+    img: renttraker,
+    link: "https://renttracker.vercel.app/",
+    glink: "https://github.com/tusharpasricha/renttracker",
+    desc: "Rent Tracking website where you can manage your rented property.",
+    categories: ["React", "Firebase"],
+  },
+  {
+    heading: "Bitcoin Explorer",
+    img: bitcoin,
+    link: "https://github.com/tusharpasricha/Bitcoin-Explorer",
+    glink: "https://github.com/tusharpasricha/Bitcoin-Explorer",
+    desc: "A bitcoin explorer with a feature where you can interact with like-minded bitcoiners",
+    categories: ["React"],
+  },
+  {
+    heading: "Charity Dapp",
+    img: charity,
+    link: "https://github.com/tusharpasricha/Dapp-charity",
+    glink: "https://github.com/tusharpasricha/Dapp-charity",
+    desc: "Decentralized application to restore trust in charity and make sure the charity reach direct to the intended recipients through Smart Contract using Solidity.",
+    categories: ["Solidity", "Metamask", "React"],
+  },
+  {
+    heading: "Sir Johnson Socks",
+    img: ss,
+    link: "https://www.sirjohnsonsocks.com/",
+    glink: "https://github.com/tusharpasricha/sirjohnsonsocks",
+    desc: "Website for a socks brand made using Reactjs and hosted on Versel",
+    categories: ["React"],
+  },
+  
+  
+]
+
+const allprojects = [
   {
     heading: "Freelancing website using Blockchain",
     img: freelancing,
@@ -117,169 +161,40 @@ const Project = () => {
       </div>
 
       <div className={classes.project}>
-        <div className={classes.scrollelement}>
-          <div className={classes.img}>
-            <img src={scrolldata[0].img} alt="" />
-          </div>
-          <div className={classes.part2}>
-            <div className={classes.data}>
-              <h3>{scrolldata[0].heading}</h3>
-              <p>{scrolldata[0].desc}</p>
-              <div className={classes.categories}>
-              <span>Solidity</span>
-              <span>Metamask</span>
-              <span>React</span>
+        {scrolldata.map((data, index) => (
+          <div className={classes.scrollelement} key={index}>
+            <div className={classes.img}>
+              <img src={data.img} alt="" />
+            </div>
+            <div className={classes.part2}>
+              <div className={classes.data}>
+                <h3>{data.heading}</h3>
+                <p>{data.desc}</p>
+                <div className={classes.categories}>
+                  {data.categories.map((category, categoryIndex) => (
+                    <span key={categoryIndex}>{category}</span>
+                  ))}
+                </div>
+              </div>
+              <div className={classes.options}>
+                <a
+                  target="_blank"
+                  className={classes.opt}
+                  href={data.link}
+                >
+                  Demo
+                </a>
+                <a
+                  target="_blank"
+                  className={classes.opt}
+                  href={data.glink}
+                >
+                  Code
+                </a>
               </div>
             </div>
-            
-
-            <div className={classes.options}>
-              <a
-                target="_blank"
-                className={classes.opt}
-                href={scrolldata[0].link}
-              >
-                {" "}
-                Demo{" "}
-              </a>
-              <a target="_blank" className={classes.opt} href={scrolldata[0].glink}>
-                {" "}
-                Code
-              </a>
-            </div>
           </div>
-        </div>
-
-        <div className={classes.scrollelement}>
-          <div className={classes.img}>
-            <img src={scrolldata[1].img} alt="" />
-          </div>
-          <div className={classes.part2}>
-            <div className={classes.data}>
-              <h3>{scrolldata[1].heading}</h3>
-              <p>{scrolldata[1].desc}</p>
-              <div className={classes.categories}>
-              <span>React</span>
-              <span>Firebase</span>
-              </div>
-            </div>
-            <div className={classes.options}>
-              <a target="_blank" className={classes.opt} href={scrolldata[1].link}>
-                {" "}
-                Demo{" "}
-              </a>
-              <a className={classes.opt} href={scrolldata[1].link}>
-                {" "}
-                Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={classes.scrollelement}>
-          <div className={classes.img}>
-            <img src={scrolldata[2].img} alt="" />
-          </div>
-          <div className={classes.part2}>
-            <div className={classes.data}>
-              <h3>{scrolldata[2].heading}</h3>
-              <p>{scrolldata[2].desc}</p>
-              <div className={classes.categories}>
-              <span>React</span>
-              <span>Node</span>
-              <span>Api</span>
-              </div>
-            </div>
-            <div className={classes.options}>
-              <a target="_blank" className={classes.opt} href={scrolldata[2].link}>
-                {" "}
-                Demo{" "}
-              </a>
-              <a target="_blank" className={classes.opt} href={scrolldata[2].glink}>
-                {" "}
-                Code
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className={classes.scrollelement}>
-          <div className={classes.img}>
-            <img src={scrolldata[3].img} alt="" />
-          </div>
-
-          <div className={classes.part2}>
-            <div className={classes.data}>
-              <h3>{scrolldata[3].heading}</h3>
-              <p>{scrolldata[3].desc}</p>
-              <div className={classes.categories}>
-              <span>Solidity</span>
-              <span>Metamask</span>
-              <span>React</span>
-              </div>
-            </div>
-            <div className={classes.options}>
-              <a target="_blank" className={classes.opt} href={scrolldata[0].link}>
-                {" "}
-                Demo{" "}
-              </a>
-              <a target="_blank" className={classes.opt} href={scrolldata[3].glink}>
-                {" "}
-                Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={classes.scrollelement}>
-          <div className={classes.img}>
-            <img src={scrolldata[4].img} alt="" />
-          </div>
-          <div className={classes.part2}>
-            <div className={classes.data}>
-              <h3>{scrolldata[4].heading}</h3>
-              <p>{scrolldata[4].desc}</p>
-              <div className={classes.categories}>
-              <span>React</span>
-              </div>
-            </div>
-            <div className={classes.options}>
-              <a target="_blank" className={classes.opt} href={scrolldata[4].link}>
-                {" "}
-                Demo{" "}
-              </a>
-              <a target="_blank" className={classes.opt} href={scrolldata[4].glink}>
-                {" "}
-                Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={classes.scrollelement}>
-          <div className={classes.img}>
-            <img src={scrolldata[5].img} alt="" />
-          </div>
-
-          <div className={classes.part2}>
-            <div className={classes.data}>
-              <h3>{scrolldata[5].heading}</h3>
-              <p>{scrolldata[5].desc}</p>
-              <div className={classes.categories}>
-              <span>javascript</span>
-              </div>
-            </div>
-            <div className={classes.options}>
-              <a target="_blank" className={classes.opt} href={scrolldata[5].link}>
-                {" "}
-                Demo{" "}
-              </a>
-              <a target="_blank" className={classes.opt} href={scrolldata[5].link}>
-                {" "}
-                Code
-              </a>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
 
       <Footer />
@@ -288,3 +203,4 @@ const Project = () => {
 };
 
 export default Project;
+
