@@ -9,35 +9,54 @@ import elliptical from "./elliptical.png"
 import tabx from "./tabx.png"
 import dont from "./dont.png"
 import everypenny from './everypenny.jpeg'
+import renttraker from './renttraker.png'
+import freelancing from './freelancing.png'
+import bitcoin from './bitcoin.png'
+import charity from './charity.png'
 const scrolldata = [
   {
     heading: "Freelancing website using Blockchain",
-    img:{},
+    img:freelancing,
     link: "https://github.com/tusharpasricha/Dapp-freelancing",
     glink:"https://github.com/tusharpasricha/Dapp-freelancing",
-    desc: "Freelancing application used to create a contract between freelancer and employer increasing the trustability. Used Solidity to design Ethereum Smart Contract. Build the full stack website using ReactJs, Ganache and Truffle.",
+    desc: "Freelancing application used to create a contract between freelancer and employer increasing the trustability. Used Solidity to design Ethereum Smart Contract.",
   },
   {
     heading: "Rent Tracker",
-    img:{ss},
+    img:renttraker,
     link: "https://renttracker.vercel.app/",
     glink:"https://github.com/tusharpasricha/renttracker",
     desc: "Rent Tracking website where you can manage your rented property.",
   },
   {
+    heading: "Bitcoin Explorer",
+    img: bitcoin,
+    link: "https://github.com/tusharpasricha/Bitcoin-Explorer",
+    glink:"https://github.com/tusharpasricha/Bitcoin-Explorer",
+    desc: "A bitcoin explorer with a feature where you can interact with like minded bitcoiners",
+  },
+  {
     heading: "Charity Dapp",
-    img:{ss},
+    img:charity,
+    link: "https://github.com/tusharpasricha/Dapp-charity",
+    glink:"https://github.com/tusharpasricha/Dapp-charity",
+    desc: "Decentralized application to restore trust in charity and make sure the charity reach direct to the intended recipients through Smart Contract using Solidity.",
+  },
+  {
+    heading: "Sir Johnson Socks",
+    img:ss,
     link: "https://www.sirjohnsonsocks.com/",
     glink:"https://github.com/tusharpasricha/sirjohnsonsocks",
     desc: "Website for a socks brand made using Reactjs and hosted on versel",
   },
   {
-    heading: "Sir Johnson Socks",
-    img:{ss},
-    link: "https://github.com/tusharpasricha/Dapp-charity",
-    glink:"https://github.com/tusharpasricha/Dapp-charity",
-    desc: "Decentralized application to restore trust in charity and make sure the charity reach direct to the intended recipients through Smart Contract using Solidity.",
+    heading: "TabX",
+    img: tabx,
+    link:"https://github.com/tusharpasricha/tabX",
+    glink:"https://github.com/tusharpasricha/tabX",
+    desc: "Extension to share URL of your current tab straight away with a click. Its a group project for my first Hackathon",
   },
+  
   {
     heading: "Don't Stop",
     img: dont,

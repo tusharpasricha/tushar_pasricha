@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 .back {
-  background-color: #292929;
+  background-color: #000000;
   display: flex;
   align-items: center;
-  height: 45px;
+  height: 50px;
 }
 .faback {
   padding-left: 10px;
