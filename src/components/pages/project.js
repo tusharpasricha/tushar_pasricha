@@ -36,7 +36,7 @@ const scrolldata = [
   {
     heading: "Bitcoin Explorer",
     img: bitcoin,
-    link: "https://github.com/tusharpasricha/Bitcoin-Explorer",
+    link: "https://bitcoin-explorer-tusharpasricha.vercel.app/",
     glink: "https://github.com/tusharpasricha/Bitcoin-Explorer",
     desc: "A bitcoin explorer with a feature where you can interact with like-minded bitcoiners",
     categories: ["React"],
