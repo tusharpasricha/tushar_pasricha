@@ -5,8 +5,8 @@
     display: flex;
     align-items: center;
     justify-content:space-around;
-    background-color: #703f37;
-    background-color: #292929;
+    
+    background-color: #212121;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -23,10 +23,10 @@
     color: white;
 }
 
-@media only screen and (min-width: 1400px) {
+/* @media only screen and (min-width: 1400px) {
 
     .socialhandles
     {
     width: 1200px;
     }
-}
+} */

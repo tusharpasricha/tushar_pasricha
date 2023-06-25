@@ -106,15 +106,15 @@
 }
 @media only screen and (min-width: 1400px) {
 
-    .outer
+    /* .outer
     {
     width: 1200px;
-    }
+    } */
     .postsafari{
         width: 50%;
     }
 }
-@media only screen and (min-width: 1400px) {
+/* @media only screen and (min-width: 1400px) {
 
     .postpage{
    
@@ -132,4 +132,4 @@
     width: 1200px;
     }
      
-   }
+   } */

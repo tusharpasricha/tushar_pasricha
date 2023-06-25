@@ -1,8 +1,10 @@
 .outer{
     /* background-color: #a76c6c; */
-    background-color: #292929;
+    background-color: #212121;
     height: 180px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .safari {
    width: 80%;
@@ -80,11 +82,11 @@
 }
 @media only screen and (min-width: 1400px) {
 
-    .outer
+    /* .outer
     {
     width: 1200px;
-    }
+    } */
     .safari{
-        width: 50%;
+        width: 40%;
     }
 }

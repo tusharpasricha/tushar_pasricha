@@ -93,7 +93,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+/* @media only screen and (min-width: 1400px) {
   .projectpage {
     display: flex;
     flex-direction: column;
@@ -106,4 +106,4 @@ img {
   .project {
     width: 1200px;
   }
-}
+} */
