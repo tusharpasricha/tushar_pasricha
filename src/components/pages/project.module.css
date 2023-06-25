@@ -107,3 +107,11 @@ img {
     width: 1200px;
   }
 } */
+.categories span {
+  background-color: #e81cff;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 50em;
+}
