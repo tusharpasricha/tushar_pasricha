@@ -11,7 +11,6 @@ ReactDOM.render(
   
   
   <BrowserRouter>
-  
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/project" element={<Project />} />

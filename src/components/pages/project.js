@@ -13,6 +13,10 @@ import renttraker from './renttraker.png'
 import freelancing from './freelancing.png'
 import bitcoin from './bitcoin.png'
 import charity from './charity.png'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+
 const scrolldata = [
   {
     heading: "Freelancing website using Blockchain",
@@ -96,6 +100,12 @@ const scrolldata = [
 ];
 
 const Project = () => {
+  const location = useLocation();
+
+// Scroll to the top of the page whenever the location changes
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, [location]);
   return (
     <div className={classes.projectpage}>
       <div className={classes.back}>
