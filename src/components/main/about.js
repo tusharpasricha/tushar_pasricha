@@ -2,8 +2,8 @@ import React from "react";
 import classes from "./about.module.css";
 import { bounce } from 'react-animations'
 import styled, { keyframes } from 'styled-components'
-
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
+import tush from "./tush.png"
 
 import { useState } from "react";
 
@@ -57,9 +57,9 @@ const About = () => {
             <span className={classes.cardtitle}>
             About me
             </span>
-            <p>
             
-            </p>
+            <img style={{ width: '100px', height: '100px' }}height src={tush} alt="Description of the image" />
+            
           </div>
           <div className={classes.cardbottom}>
             <p>
