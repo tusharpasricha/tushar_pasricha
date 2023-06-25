@@ -11,11 +11,32 @@ import dont from "./dont.png"
 import everypenny from './everypenny.jpeg'
 const scrolldata = [
   {
-    heading: "Sir Johnson Socks",
+    heading: "Freelancing website using Blockchain",
+    img:{},
+    link: "https://github.com/tusharpasricha/Dapp-freelancing",
+    glink:"https://github.com/tusharpasricha/Dapp-freelancing",
+    desc: "Freelancing application used to create a contract between freelancer and employer increasing the trustability. Used Solidity to design Ethereum Smart Contract. Build the full stack website using ReactJs, Ganache and Truffle.",
+  },
+  {
+    heading: "Rent Tracker",
+    img:{ss},
+    link: "https://renttracker.vercel.app/",
+    glink:"https://github.com/tusharpasricha/renttracker",
+    desc: "Rent Tracking website where you can manage your rented property.",
+  },
+  {
+    heading: "Charity Dapp",
     img:{ss},
     link: "https://www.sirjohnsonsocks.com/",
     glink:"https://github.com/tusharpasricha/sirjohnsonsocks",
     desc: "Website for a socks brand made using Reactjs and hosted on versel",
+  },
+  {
+    heading: "Sir Johnson Socks",
+    img:{ss},
+    link: "https://github.com/tusharpasricha/Dapp-charity",
+    glink:"https://github.com/tusharpasricha/Dapp-charity",
+    desc: "Decentralized application to restore trust in charity and make sure the charity reach direct to the intended recipients through Smart Contract using Solidity.",
   },
   {
     heading: "Don't Stop",
@@ -68,7 +89,7 @@ const Project = () => {
       <div className={classes.project}>
         <div className={classes.scrollelement}>
           <div className={classes.img}>
-            <img src={ss} alt="" />
+            <img src={scrolldata[0].img} alt="" />
           </div>
 
           <div className={classes.part2}>
