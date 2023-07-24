@@ -6,6 +6,7 @@ const GitHubContributionsChart = () => {
     <div className="calendar">
       <h2>GitHub</h2>
       <GitHubCalendar
+        colorScheme="dark"
         username="tusharpasricha"
         color="green" // You can choose from 'green', 'blue', or 'pink'
       />
