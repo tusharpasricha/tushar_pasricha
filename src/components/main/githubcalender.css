@@ -10,6 +10,17 @@
     margin-right: 300px;
     padding-bottom: 20px;
 }
+.cal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    color: white;
+ 
+   
+
+}
  @media (max-width : 1200px){
     .calendar{
         margin-left: 50px;
