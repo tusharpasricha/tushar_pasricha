@@ -44,8 +44,8 @@ const scrolldata = [
   {
     heading: "Charity Dapp",
     img: charity,
-    link: "https://github.com/tusharpasricha/Dapp-charity",
-    glink: "https://github.com/tusharpasricha/Dapp-charity",
+    link: "https://github.com/tusharpasricha/freelancing-deals-dapp",
+    glink: "https://github.com/tusharpasricha/freelancing-deals-dapp",
     desc: "Decentralized application to restore trust in charity and make sure the charity reach direct to the intended recipients through Smart Contract using Solidity.",
     categories: ["Solidity", "Metamask", "React"],
   },
