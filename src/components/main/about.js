@@ -3,7 +3,7 @@ import classes from "./about.module.css";
 import { bounce } from 'react-animations'
 import styled, { keyframes } from 'styled-components'
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
-import tush from "./tush.png"
+import tush from "./tush2.png"
 
 import { useState } from "react";
 
@@ -56,7 +56,7 @@ const About = () => {
                     About me
                   </span>
 
-                  <img style={{ width: '100px', height: '100px' }} height src={tush} alt="Description of the image" />
+                  <img style={{ width: '120px', height: '120px' , borderRadius:'50%' }} height src={tush} alt="Description of the image" />
 
                 </div>
                 <div className={classes.cardbottom}>
