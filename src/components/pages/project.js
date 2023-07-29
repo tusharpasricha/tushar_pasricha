@@ -20,8 +20,8 @@ const scrolldata = [
   {
     heading: "Freelancing website using Blockchain",
     img: freelancing,
-    link: "https://github.com/tusharpasricha/Dapp-freelancing",
-    glink: "https://github.com/tusharpasricha/Dapp-freelancing",
+    link: "https://freelancer-dapp-tusharpasricha.vercel.app/",
+    glink: "https://github.com/tusharpasricha/freelancing-deals-dapp",
     desc: "Freelancing application used to create a contract between freelancer and employer increasing the trustability.",
     categories: ["Solidity", "Metamask", "React"],
   },
@@ -44,8 +44,8 @@ const scrolldata = [
   {
     heading: "Charity Dapp",
     img: charity,
-    link: "https://github.com/tusharpasricha/freelancing-deals-dapp",
-    glink: "https://github.com/tusharpasricha/freelancing-deals-dapp",
+    link: "https://github.com/tusharpasricha/Dapp-charity",
+    glink: "https://github.com/tusharpasricha/Dapp-charity",
     desc: "Decentralized application to restore trust in charity and make sure the charity reach direct to the intended recipients through Smart Contract using Solidity.",
     categories: ["Solidity", "Metamask", "React"],
   },
