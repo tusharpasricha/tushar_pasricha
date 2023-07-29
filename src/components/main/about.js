@@ -6,6 +6,7 @@ import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import tush from "./tush2.png"
 
 import { useState } from "react";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 const About = () => {
   const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} `;
@@ -42,7 +43,7 @@ const About = () => {
           <span className={classes.span}>About me</span>
           <span className={classes.span}>Hello!</span>
         </button>}
-        {c === 1 && <FaCaretUp size={55}  />}
+        {c === 1 && <FaCaretUp size={85} style={{cursor : "pointer"}} />}
       </button>
 
       <div className={classes.aboutdata}>
