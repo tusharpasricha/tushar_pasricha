@@ -1,212 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Lobster&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-.main
-{
-    /* background-color: #703f37; */
-    /* background-color: #212121; */
-    /* background: url(setup.jpeg); */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* height: 35rem; */
-    padding-top: 80px;
-    padding-bottom: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 35rem; */
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
-
-.mainintro
-{
-
-    color: rgba(255, 255, 255, 0.637);
-    margin: 0;
-    font-size: 4.0rem;
-    font-family: 'Poppins', sans-serif;
-    
-    cursor: pointer;
-    text-align: center;
-    /* font-family: 'Lobster', cursive; */
-   
-
+.mainintro {
+  color: rgba(255, 255, 255, 0.637);
+  margin: 0;
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  text-align: center;
 }
-.aboutbtn{ 
-    color: rgba(255, 255, 255, 0.637);
-    background-color: transparent;
-    border: none;
-    padding-top: 35px;
-    /* font-size: 2rem; */
+.aboutbtn {
+  color: rgba(255, 255, 255, 0.637);
+  background-color: transparent;
+  border: none;
+  padding-top: 35px;
 }
 
-
-.aboutdata{
-    /* color: rgba(163, 88, 88, 0.673); */
-    margin: 0;
-    /* font-size: 1.3rem; */
-    width: 80%;
-    /* text-align: center; */
-    font-weight: bolder;
-    /* background-color: #703f37; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.aboutdata {
+  margin: 0;
+  width: 80%;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* -----------------------------------card */
 
 .card {
-  /* font-size: 50px; */
-  font-family: 'Lobster', cursive;
-    /* width: 320px; */
-    background: #232323;
-    color: rgb(2, 0, 0);
-    position: relative;
-    border-radius: 2.5em;
-    padding: 2em;
-    transition: transform 0.4s ease;
-    background: url(setup.jpeg);
-    height: 1300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-      background-attachment: fixed;
+  font-family: "Lobster", cursive;
+  background: #232323;
+  color: rgb(2, 0, 0);
+  position: relative;
+  border-radius: 2.5em;
+  padding: 2em;
+  transition: transform 0.4s ease;
+  background: url(setup.jpeg);
+  height: 1300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
 
+.card .cardcontent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+.card .cardbottom {
+  font-size: 50px;
+}
+.card .cardtop,
+.card .cardbottom {
+  display: flex;
+  justify-content: space-between;
+}
 
+.card .cardtop p,
+.card .cardtop .cardtitle,
+.card .cardbottom p,
+.card .cardbottom .card-title {
+  margin: 0;
+}
 
-  }
-  
-  .card .cardcontent {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    /* gap: 0em; */
-    height: 100%;
-    transition: transform 0.4s ease;
-  }
-  .card .cardbottom{
-   font-size: 50px;  
-  }
-  .card .cardtop, .card .cardbottom {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .card .cardtop p, .card .cardtop .cardtitle, .card .cardbottom p, .card .cardbottom .card-title {
-    margin: 0;
-  }
-  
-  .card .cardtitle {
-    font-weight: bold;
-  }
-  
-  .card .cardtop p, .card .cardbottom p {
-    font-weight: 600;
-  }
-  
-  .card .cardbottom {
-    align-items: flex-end;
-  }
-  
-  .card .cardimage {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: grid;
-    place-items: center;
-    pointer-events: none;
-  }
-  
-  .card .cardimage svg {
-    width: 4em;
-    height: 4em;
-    transition: transform 0.4s ease;
-  }
-  
-  .card:hover {
-    cursor: pointer;
-    transform: scale(0.97);
-  }
-  
-  .card:hover .cardcontent {
-    transform: scale(0.96);
-  }
-  
-  .card:hover .cardimage svg {
-    transform: scale(1.05);
-  }
-  
-  .card:active {
-    transform: scale(0.9);
-  }
+.card .cardtitle {
+  font-weight: bold;
+}
 
-  /* ---------------ABOUTBUTTON */
+.card .cardtop p,
+.card .cardbottom p {
+  font-weight: 600;
+}
 
-  .button {
-    position: relative;
-    border: none;
-    color: #e8e8e8;
-    background: #333333;
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    height: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0, 0, 0,0.2);
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-    overflow: hidden;
-  }
-  
-  .button .span {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-    transition-delay: 0.6s;
-  }
-  
-  .button:hover .span:nth-child(1) {
-    transform: translateY(-100%);
-    transition-delay: 0s;
-  }
-  
-  .button:hover .span:nth-child(2) {
-    transform: translateY(-100%);
-    transition-delay: 0s;
-  }
-  
-  .button:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
-    transform: scaleX(0);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-    transition-delay: 0;
-    transform-origin: left;
-  }
-  
-  .button:hover::before {
-    transform: scaleX(1);
-    transition-delay: 0.6s;
-  }
-  
-  .button:active {
-    box-shadow: none;
-  }
-  
-  
-  
-          
+.card .cardbottom {
+  align-items: flex-end;
+}
+
+.card .cardimage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.card .cardimage svg {
+  width: 4em;
+  height: 4em;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+.card:hover .cardcontent {
+  transform: scale(0.96);
+}
+
+.card:hover .cardimage svg {
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.9);
+}
+
+/* ---------------ABOUTBUTTON */
+
+.button {
+  position: relative;
+  border: none;
+  color: #e8e8e8;
+  background: #333333;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+.button .span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition-delay: 0.6s;
+}
+
+.button:hover .span:nth-child(1) {
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.button:hover .span:nth-child(2) {
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.button:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: scaleX(0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition-delay: 0;
+  transform-origin: left;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+  transition-delay: 0.6s;
+}
+
+.button:active {
+  box-shadow: none;
+}
