@@ -44,7 +44,7 @@
   border-radius: 2.5em;
   padding: 2em;
   transition: transform 0.4s ease;
-  background: url(setup.jpeg);
+  background: url(../../img/setup.jpeg);
   height: 1300px;
   background-size: cover;
   background-repeat: no-repeat;

@@ -3,18 +3,18 @@ import classes from "./project.module.css";
 import Footer from "../main/footer";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import ss from "./first.png";
-import owlsome from "./owlsome.png"
-import elliptical from "./elliptical.png"
-import tabx from "./tabx.png"
-import dont from "./dont.png"
-import everypenny from './everypenny.jpeg'
-import renttraker from './renttraker.png'
-import freelancing from './freelancing.png'
-import bitcoin from './bitcoin.png'
-import charity from './charity.png'
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import ss from "../../img/first.png";
+import owlsome from "../../img/owlsome.png";
+import elliptical from "../../img/elliptical.png";
+import tabx from "../../img/tabx.png";
+import dont from "../../img/dont.png";
+import everypenny from "../../img/everypenny.jpeg";
+import renttraker from "../../img/renttraker.png";
+import freelancing from "../../img/freelancing.png";
+import bitcoin from "../../img/bitcoin.png";
+import charity from "../../img/charity.png";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const scrolldata = [
   {
@@ -57,11 +57,7 @@ const scrolldata = [
     desc: "Website for a socks brand made using Reactjs and hosted on Versel",
     categories: ["React"],
   },
-  
-  
-]
-
-
+];
 
 const Project = () => {
   const location = useLocation();
@@ -99,6 +95,7 @@ const Project = () => {
               <div className={classes.options}>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   className={classes.opt}
                   href={data.link}
                 >
@@ -106,6 +103,7 @@ const Project = () => {
                 </a>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   className={classes.opt}
                   href={data.glink}
                 >
@@ -123,12 +121,6 @@ const Project = () => {
 };
 
 export default Project;
-
-
-
-
-
-
 
 // const allprojects = [
 //   {

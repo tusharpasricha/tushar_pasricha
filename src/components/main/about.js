@@ -3,7 +3,7 @@ import classes from "./about.module.css";
 import { bounce } from "react-animations";
 import styled, { keyframes } from "styled-components";
 import { FaCaretUp } from "react-icons/fa";
-import tush from "./tush2.png";
+import tush from "../../img/tush2.png";
 
 import { useState } from "react";
 

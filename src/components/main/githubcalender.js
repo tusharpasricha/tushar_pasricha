@@ -4,7 +4,11 @@ import "./githubcalender.css";
 const GitHubContributionsChart = () => {
   return (
     <div className="calendar">
-      <a href="https://github.com/tusharpasricha" target="_blank">
+      <a
+        href="https://github.com/tusharpasricha"
+        rel="noreferrer"
+        target="_blank"
+      >
         <div className="cal">
           <h2>GitHub</h2>
           <GitHubCalendar
