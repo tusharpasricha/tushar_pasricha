@@ -65,11 +65,17 @@ const About = () => {
                 <div className={classes.cardbottom}>
                   <p>
                     <br></br>
-                    Final year Computer Science Undergrad at Jaypee Institute of
-                    Information Technology Noida, India.
+                    I’m Tushar Pasricha, a recent B.Tech graduate in Computer
+                    Science and Engineering with a passion for solving problems
+                    and learning something new every day. My focus is on
+                    understanding the core principles behind technology and
+                    finding practical ways to apply them. 
                     <br></br>
-                    <br></br>I am into Web development and am also a Blockchain
-                    enthusiast.
+                    <br></br>I believe in
+                    approaching every project with curiosity and a willingness
+                    to grow, knowing there’s always more to learn. Whether in
+                    development or life, I’m committed to staying adaptable and
+                    open to new challenges.
                   </p>
 
                   <svg
