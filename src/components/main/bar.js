@@ -5,64 +5,50 @@ import { Link } from "react-router-dom";
 const Bar = () => {
   return (
     <div className={classes.bar}>
-      <Link
-        className={classes.barlink}
-        activeClassName={classes.active}
-        to="/project"
-      >
+      <Link className={classes.barlink} to="/project">
         <div className={classes.card}>
           <div className={classes.icon}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              height="38px"
-              width="38px"
-              version="1.1"
-              id="heart"
-              viewBox="0 0 471.701 471.701"
-              xmlSpace="preserve"
+              height="24px"
+              width="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-folder"
             >
-              <linearGradient id="gradientColor">
-                <stop offset="5%" stop-color="#7eaaff"></stop>
-                <stop offset="95%" stop-color="#ff48fb"></stop>
-              </linearGradient>
-              <g>
-                <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"></path>
-              </g>
+              <path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z"></path>
             </svg>
           </div>
-          <p className={classes.title}>Projects</p>
-          <p className={classes.text}>Check all projects in one place.</p>
+          <p className={classes.text}>Projects</p>
         </div>
       </Link>
-      <Link
-        className={classes.barlink}
-        activeClassName={classes.active}
-        to="/post"
-      >
+      <Link className={classes.barlink} to="/post">
         <div className={classes.card}>
           <div className={classes.icon}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              height="38px"
-              width="38px"
-              version="1.1"
-              id="heart"
-              viewBox="0 0 471.701 471.701"
-              xmlSpace="preserve"
+              height="24px"
+              width="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-file-text"
             >
-              <linearGradient id="gradientColor">
-                <stop offset="5%" stop-color="#7eaaff"></stop>
-                <stop offset="95%" stop-color="#ff48fb"></stop>
-              </linearGradient>
-              <g>
-                <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"></path>
-              </g>
+              <path d="M14 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-4-4z"></path>
+              <line x1="14" y1="2" x2="14" y2="10"></line>
+              <line x1="4" y1="10" x2="20" y2="10"></line>
+              <line x1="4" y1="14" x2="20" y2="14"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
             </svg>
           </div>
-          <p className={classes.title}>Posts</p>
-          <p className={classes.text}>Check all posts in one place.</p>
+          <p className={classes.text}>Posts</p>
         </div>
       </Link>
     </div>

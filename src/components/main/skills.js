@@ -9,34 +9,33 @@ import {
 } from "react-icons/fa";
 import classes from "./skills.module.css";
 
-const skills = () => {
+const Skills = () => {
   return (
     <div className={classes.skills}>
-      <div className={classes.head}></div>
-      <div className={classes.allskils}>
-        <div className={classes.eachskill}>
-          <FaHtml5 className={classes.skillsfa} />
+      {/* <div className={classes.head}>Skills</div> */}
+      <div className={classes.allSkills}>
+        <div className={classes.eachSkill}>
+          <FaHtml5 className={classes.skillsIcon} />
           HTML
         </div>
-        <div className={classes.eachskill}>
-          <FaCss3 className={classes.skillsfa} />
-          Css
+        <div className={classes.eachSkill}>
+          <FaCss3 className={classes.skillsIcon} />
+          CSS
         </div>
-        <div className={classes.eachskill}>
-          <FaJs className={classes.skillsfa} />
-          Javascript
+        <div className={classes.eachSkill}>
+          <FaJs className={classes.skillsIcon} />
+          JavaScript
         </div>
-        <div className={classes.eachskill}>
-          <FaReact className={classes.skillsfa} />
-          Reactjs
+        <div className={classes.eachSkill}>
+          <FaReact className={classes.skillsIcon} />
+          React
         </div>
-
-        <div className={classes.eachskill}>
-          <FaNodeJs className={classes.skillsfa} />
-          Nodejs
+        <div className={classes.eachSkill}>
+          <FaNodeJs className={classes.skillsIcon} />
+          Node.js
         </div>
-        <div className={classes.eachskill}>
-          <FaFireAlt className={classes.skillsfa} />
+        <div className={classes.eachSkill}>
+          <FaFireAlt className={classes.skillsIcon} />
           Firebase
         </div>
       </div>
@@ -44,4 +43,4 @@ const skills = () => {
   );
 };
 
-export default skills;
+export default Skills;

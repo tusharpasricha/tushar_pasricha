@@ -1,0 +1,95 @@
+/* Dark Theme specific to the Portfolio component */
+.portfolioContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #121212; /* Dark background */
+  padding: 20px;
+  color: #e0e0e0; /* Light text color */
+}
+
+.portfolioContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.textContent {
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* White for heading */
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #b0b0b0; /* Slightly lighter than main text */
+}
+
+.imageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #444; /* Darker border to match theme */
+}
+
+/* Add some hover effects */
+.profileImage:hover {
+  border-color: #e0e0e0; /* Light border on hover */
+}
+
+/* Social media styling */
+.socialMedia {
+  margin-top: 20px;
+}
+
+.socialMedia a {
+  display: inline-block;
+  margin: 0 15px;
+  color: #e0e0e0; /* Light color for icons */
+  text-decoration: none;
+  font-size: 1.5rem; /* Size of the icons */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.socialMedia a:hover {
+  color: #ffffff; /* Light color on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* Button styling */
+.resumeButton {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #333; /* Dark background for button */
+  border: 2px solid #444; /* Slightly lighter border to match theme */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.resumeButton:hover {
+  background-color: #444; /* Slightly lighter background on hover */
+  border-color: #555; /* Lighter border on hover */
+  color: #ffffff; /* Ensure text stays white */
+}

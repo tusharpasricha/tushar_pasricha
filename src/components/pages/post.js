@@ -3,7 +3,6 @@ import classes from "./post.module.css";
 import Footer from "../main/footer";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { Object } from "../main/object";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -46,7 +45,6 @@ const Post = () => {
           </div>
         </a>
       </div>
-      <Object />
 
       <br></br>
       <br></br>

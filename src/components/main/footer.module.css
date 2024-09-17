@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #050505;
+  background-color: #121212;
   color: rgba(255, 255, 255, 0.637);
   height: 45px;
   font-size: 0.8rem;
@@ -15,5 +15,5 @@
   /* border-top-left-radius: 20px ;
     border-top-right-radius: 20px; */
   border: sol;
-  box-shadow: rgba(0, 0, 0, 0.696) 0px 22px 70px 4px;
+  /* box-shadow: rgba(0, 0, 0, 0.696) 0px 22px 70px 4px; */
 }
