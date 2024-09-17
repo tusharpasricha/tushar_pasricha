@@ -12,7 +12,7 @@ function Main() {
       <Bar />
       <Skills />
       {/* <Code /> */}
-      {/* <GitHubContributionsChart /> */}
+      <GitHubContributionsChart />
       <Footer />
     </>
   );

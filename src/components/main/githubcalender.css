@@ -3,30 +3,49 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: black; */
+  background-color: #1e1e1e; 
   color: white;
-  border: 2px solid grey;
-  margin-left: 300px;
-  margin-right: 300px;
-  padding-bottom: 20px;
+  border-radius: 10px; 
+  border: 2px solid #333; 
+  padding: 20px; 
+  margin: 0 auto; 
+  max-width: 800px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
+
 .cal {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: black; */
-  color: white;
+  width: 100%; 
 }
+
+.cal h2 {
+  margin-bottom: 20px; 
+  font-size: 24px; 
+  font-weight: 600; /* Bold heading */
+}
+
+/* Responsive design adjustments */
 @media (max-width: 1200px) {
   .calendar {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px; /* Adjust padding */
   }
 }
+
 @media (max-width: 600px) {
   .calendar {
     margin-left: 10px;
     margin-right: 10px;
+    padding: 10px; /* Adjust padding */
+  }
+
+  .cal h2 {
+    font-size: 20px; /* Smaller heading text on small screens */
   }
 }
