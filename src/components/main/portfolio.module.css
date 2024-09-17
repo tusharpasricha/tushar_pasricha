@@ -93,3 +93,63 @@ p {
   border-color: #555; /* Lighter border on hover */
   color: #ffffff; /* Ensure text stays white */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .portfolioContent {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .profileImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .socialMedia a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+
+  .resumeButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolioContainer {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .profileImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .socialMedia a {
+    margin: 0 8px;
+    font-size: 1rem;
+  }
+
+  .resumeButton {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}

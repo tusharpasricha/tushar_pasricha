@@ -3,14 +3,15 @@
   justify-content: center; /* Center items horizontally */
   align-items: center;
   background-color: #121212; /* Dark background */
-  padding: 55px; /* Reduced padding for a tighter look */
+  padding: 55px;
   font-family: "Poppins", sans-serif;
+  flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
 }
 
 .barlink {
   text-decoration: none;
   color: #e1eaed; /* Light color for text */
-  margin: 0 10px; /* Add some margin between items */
+  margin: 0 20px; /* Add some margin between items */
 }
 
 .card {
@@ -18,7 +19,8 @@
   align-items: center;
   background-color: #333; /* Darker card background */
   border-radius: 8px; /* Slightly rounded corners */
-  padding: 10px 15px; /* Adjusted padding */
+  padding: 15px 25px; /* Adjusted padding for a better look */
+  margin-bottom: 20px; /* Spacing between rows on smaller screens */
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow for card */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
@@ -31,7 +33,7 @@
 .icon {
   width: 30px; /* Adjusted size */
   height: 30px; /* Adjusted size */
-  margin-right: 10px;
+  margin-right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,13 +45,43 @@
 
 .text {
   color: #e1eaed; /* Light color for text */
-  font-size: 16px; /* Adjusted font size */
+  font-size: 18px; /* Slightly larger text for better readability */
   margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .bar {
-    flex-direction: column;
-    padding: 10px; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack items vertically on small screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Make cards take full width */
+    justify-content: flex-start; /* Align items to the left */
+    padding: 12px 20px; /* Adjust padding for smaller screens */
+    margin: 10px 0; /* Spacing between cards */
+  }
+
+  .icon {
+    margin-right: 12px; /* Smaller margin for smaller screens */
+  }
+
+  .text {
+    font-size: 16px; /* Reduce text size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    padding: 10px 15px; /* Further adjust padding for very small screens */
+  }
+
+  .text {
+    font-size: 14px; /* Smaller text size for very small screens */
+  }
+
+  .icon {
+    width: 25px; /* Reduce icon size */
+    height: 25px;
   }
 }
