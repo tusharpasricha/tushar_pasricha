@@ -83,7 +83,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 900px) {
   .scrollelement {
     flex-direction: column;
     width: 80%;
