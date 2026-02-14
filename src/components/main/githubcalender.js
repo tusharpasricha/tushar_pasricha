@@ -12,9 +12,10 @@ const GitHubContributionsChart = () => {
         <div className="cal">
           <h2>GitHub</h2>
           <GitHubCalendar
-            colorScheme="dark"
             username="tusharpasricha"
-            color="green" // You can choose from 'green', 'blue', or 'pink'
+            theme={{
+              dark: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'],
+            }}
           />
         </div>
       </a>

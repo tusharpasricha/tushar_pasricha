@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './portfolio.module.css'; // Importing the CSS module
 import tush4 from '../../img/tush4.jpeg'; // Your profile image
+import resumePdf from '../../img/resume.pdf'; // Importing the resume file
 
 const Portfolio = () => {
   return (
@@ -43,18 +44,19 @@ const Portfolio = () => {
 
         <div className={styles.textContent}>
           <h1>Tushar Pasricha</h1>
+          <h3>Software Engineer</h3>
           <p>
-            I’m a recent B.Tech graduate in Computer Science and Engineering with a passion for solving
-            problems and learning something new every day. My focus is on understanding the core principles behind
-            technology and finding practical ways to apply them.
+            I am a Software Engineer, specializing in building
+            scalable, production-ready full-stack applications.
           </p>
           <p>
-            I believe in approaching every project with curiosity and a willingness to grow, knowing there’s always more
-            to learn. Whether in development or life, I’m committed to staying adaptable and open to new challenges.
+            My expertise includes Next.js, TypeScript, and Node.js/Express. I have experience designing
+            multi-channel notification systems, implementing secure RBAC authentication, and architecting
+            robust APIs. I am passionate about creating efficient, user-centric solutions.
           </p>
           <a
-            href="https://drive.google.com/file/d/1vkInHRCuuAFM2XEWkB2dUQZL7NGZ6MPq/view" // Link to the local resume image
-            download="Tushar_Pasricha_Resume" // Suggested name for downloaded file
+            href={resumePdf}
+            download="Tushar_Pasricha_Resume.pdf"
             className={styles.resumeButton}
           >
             Resume

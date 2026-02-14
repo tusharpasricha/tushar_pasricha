@@ -3,16 +3,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1e1e1e; 
+  
+  /* Glassmorphism to match theme */
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  
   color: white;
-  border-radius: 10px; 
-  border: 2px solid #333; 
-  padding: 20px; 
-  margin: 0 auto; 
-  max-width: 800px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-  margin-top: 50px;
-  margin-bottom: 10px;
+  border-radius: 15px; 
+  padding: 30px; 
+  margin: 50px auto; 
+  max-width: 900px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); 
+}
+
+.calendar a {
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Force transparency on the calendar internal elements */
+.calendar svg, 
+.calendar rect {
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 .cal {
@@ -24,9 +39,10 @@
 }
 
 .cal h2 {
-  margin-bottom: 20px; 
-  font-size: 24px; 
-  font-weight: 600; /* Bold heading */
+  margin-bottom: 25px; 
+  font-size: 2rem; 
+  font-weight: 600;
+  color: #fff;
 }
 
 /* Responsive design adjustments */
@@ -34,7 +50,7 @@
   .calendar {
     margin-left: 20px;
     margin-right: 20px;
-    padding: 15px; /* Adjust padding */
+    padding: 20px;
   }
 }
 
@@ -42,10 +58,11 @@
   .calendar {
     margin-left: 10px;
     margin-right: 10px;
-    padding: 10px; /* Adjust padding */
+    padding: 15px;
   }
 
   .cal h2 {
-    font-size: 20px; /* Smaller heading text on small screens */
+    font-size: 1.5rem; 
   }
 }
+

@@ -1,13 +1,16 @@
-/* Dark Theme specific to the Portfolio component */
+/* Dark Theme specific to the Portfolio component with Glassmorphism */
 .portfolioContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Ensure it covers full height */
   text-align: center;
-  background-color: #121212; /* Dark background */
+  background-image: url('../../img/1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
   padding: 20px;
-  color: #e0e0e0; /* Light text color */
+  color: #e0e0e0;
 }
 
 .portfolioContent {
@@ -16,23 +19,45 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  
+  /* Glassmorphism */
+  background: rgba(18, 18, 18, 0.75); /* Dark semi-transparent background */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  max-width: 1000px;
+  width: 90%;
 }
 
 .textContent {
   max-width: 500px;
+  text-align: left;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
-  color: #ffffff; /* White for heading */
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #ffffff; /* Replaced accent with white */
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 15px;
-  color: #b0b0b0; /* Slightly lighter than main text */
+  color: #d1d1d1;
 }
 
 .imageContent {
@@ -43,113 +68,94 @@ p {
 }
 
 .profileImage {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #444; /* Darker border to match theme */
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
 }
 
-/* Add some hover effects */
 .profileImage:hover {
-  border-color: #e0e0e0; /* Light border on hover */
+  transform: scale(1.05);
+  border-color: #ffffff; /* Replaced accent with white */
 }
 
 /* Social media styling */
 .socialMedia {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .socialMedia a {
   display: inline-block;
   margin: 0 15px;
-  color: #e0e0e0; /* Light color for icons */
+  color: #e0e0e0;
   text-decoration: none;
-  font-size: 1.5rem; /* Size of the icons */
-  transition: color 0.3s, transform 0.3s;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
 }
 
 .socialMedia a:hover {
-  color: #ffffff; /* Light color on hover */
-  transform: scale(1.1); /* Slightly larger on hover */
+  color: #ffffff; /* Replaced accent with white */
+  transform: translateY(-3px);
 }
 
 /* Button styling */
 .resumeButton {
   display: inline-block;
-  padding: 12px 25px;
-  margin-top: 20px;
+  padding: 12px 30px;
+  margin-top: 25px;
   font-size: 1.1rem;
-  color: #ffffff;
-  background-color: #333; /* Dark background for button */
-  border: 2px solid #444; /* Slightly lighter border to match theme */
-  border-radius: 5px;
+  font-weight: 600;
+  color: #000000;
+  background: #ffffff; /* White background */
+  border: none;
+  border-radius: 50px;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
 
 .resumeButton:hover {
-  background-color: #444; /* Slightly lighter background on hover */
-  border-color: #555; /* Lighter border on hover */
-  color: #ffffff; /* Ensure text stays white */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+  background: #f0f0f0;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .portfolioContent {
     flex-direction: column;
-    gap: 30px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .textContent {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolioContainer {
+    padding: 10px;
+  }
+  
+  .portfolioContent {
+     padding: 20px;
+     width: 100%;
   }
 
   h1 {
     font-size: 2rem;
   }
 
-  p {
-    font-size: 1rem;
-  }
-
   .profileImage {
-    width: 150px;
-    height: 150px;
-  }
-
-  .socialMedia a {
-    margin: 0 10px;
-    font-size: 1.2rem;
-  }
-
-  .resumeButton {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .portfolioContainer {
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  .profileImage {
-    width: 120px;
-    height: 120px;
-  }
-
-  .socialMedia a {
-    margin: 0 8px;
-    font-size: 1rem;
-  }
-
-  .resumeButton {
-    padding: 8px 18px;
-    font-size: 0.9rem;
+    width: 160px;
+    height: 160px;
   }
 }

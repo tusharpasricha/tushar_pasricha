@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap");
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  background-image: url('../../img/2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  font-family: "Poppins", sans-serif;
+  padding: 50px 0;
+}
+
+.scrollelement {
+  margin: 30px auto;
+  
+  /* Glassmorphism */
+  background: rgba(28, 28, 28, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Stretch to fill height */
+  overflow: hidden; /* Ensure image respects border radius */
+
+  width: 70%;
+  max-width: 1100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrollelement:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+.img {
+  width: 50%;
+  min-height: 300px; /* Ensure minimum height */
+  background-color: #2a2a2a;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.scrollelement:hover img {
+  transform: scale(1.03);
+}
+
+.part2 {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.data h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.data p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.categories span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 12px;
+  font-weight: 500;
+  color: #ffffff; /* White text */
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* White border */
+}
+
+.options {
+  display: flex;
+  gap: 15px;
+}
+
+.opt {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.opt:first-child {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.opt:first-child:hover {
+  background-color: #e0e0e0;
+}
+
+.opt:last-child {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.opt:last-child:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 900px) {
+  .scrollelement {
+    flex-direction: column;
+    width: 90%;
+  }
+  .img {
+    width: 100%;
+    height: 250px;
+  }
+  .part2 {
+    width: 100%;
+    padding: 20px;
+  }
+}
