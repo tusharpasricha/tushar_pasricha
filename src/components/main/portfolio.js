@@ -46,13 +46,14 @@ const Portfolio = () => {
           <h1>Tushar Pasricha</h1>
           <h3>Software Engineer</h3>
           <p>
-            I am a Software Engineer, specializing in building
-            scalable, production-ready full-stack applications.
+            I currently work on full-stack enterprise software, developing secure APIs, real-time systems, 
+            and modern frontend interfaces using React, Next.js, and Node.js. I've also built AI-powered 
+            applications that automate workflows and provide meaningful insights from data.
           </p>
           <p>
-            My expertise includes Next.js, TypeScript, and Node.js/Express. I have experience designing
-            multi-channel notification systems, implementing secure RBAC authentication, and architecting
-            robust APIs. I am passionate about creating efficient, user-centric solutions.
+            I enjoy designing backend architecture, building performant user interfaces, and solving complex 
+            engineering problems. I'm especially interested in system design and creating products that are 
+            robust, efficient, and user-friendly.
           </p>
           <a
             href={resumePdf}
