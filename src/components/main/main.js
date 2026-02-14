@@ -2,6 +2,7 @@ import Footer from "./footer";
 import Code from "./code";
 import Skills from "./skills";
 import Portfolio from "./portfolio";
+import Experience from "./experience";
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
       <Portfolio />
       <Skills />
       {/* <Code /> */}
+      {/* <Experience /> */}
       <Footer />
     </>
   );
